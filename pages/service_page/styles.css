@@ -78,3 +78,10 @@ button.submitbtn:hover {
     background-color:#039be5;
 }
 */
+
+#toast-container {
+    min-width: 10%;
+    top: 80%;
+    right: 50%;
+    transform: translateX(50%) translateY(80%);
+}
