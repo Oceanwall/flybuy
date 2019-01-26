@@ -1,0 +1,17 @@
+{
+  "name": "flybuy",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Oceanwall/flybuy",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Matthew Zhao",
+  "devDependencies": {
+    "electron": "^4.0.2"
+  }
+}
