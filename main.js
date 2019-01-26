@@ -8,12 +8,12 @@ let mainWindow;
 function createWindow () {
   // Create the browser window.
   // Change window settings here.
-  mainWindow = new BrowserWindow({width: 1200, height: 600, resizable: false})
+  mainWindow = new BrowserWindow({width: 1000, height: 600, resizable: false})
   // and load the index.html of the app.
   mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

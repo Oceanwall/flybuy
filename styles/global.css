@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Muli:300,400,700|Nunito:300,400');
+
+/* Margin classes. Bad style, but necessary for hackathon hacking */
+.margin-top-1 {
+  margin-top: 10px;
+}
+.margin-top-2 {
+  margin-top: 20px;
+}
+.margin-top-3 {
+  margin-top: 30px;
+}
+.margin-top-5 {
+  margin-top: 50px;
+}
+.margin-top-7 {
+  margin-top: 70px;
+}
+.margin-top-9 {
+  margin-top: 90px;
+}
+.margin-top-10 {
+  margin-top: 100px;
+}
+.margin-top-12 {
+  margin-top: 120px;
+}
+.margin-top-15 {
+  margin-top: 150px;
+}
+.padding-top-1 {
+  padding-top: 10px;
+}
+.padding-top-5 {
+  padding-top: 50px;
+}
+.padding-bottom-5 {
+  padding-bottom: 50px;
+}
+.no-margin-top {
+  margin-top: 0px;
+}
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+/* General use classes */
+.no-box-shadow {
+  box-shadow: none;
+}
+.purple-box-shadow {
+  box-shadow: 0 1px 3px rgba(243,229,245);
+}
+.standard-hover-shadow:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  transition: all 0.2s ease-in;
+}
+
+.custom-hoverable {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.transparent {
+  background: none !important;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+/* Title page */
+body {
+}
+h1 {
+  /* font-family: 'Advent Pro', sans-serif; */
+}
+/* Navbar */
+.brand-logo {
+  margin-left: 30px;
+}
+.bold {
+  font-weight: bold;
+}
+/* Title page content */
+.title-text {
+  margin-top: 20px;
+  line-height: 80px;
+}
+.title-image-div {
+  margin-top: -60px;
+}
+.title-image {
+  height: 60vh;
+}
+.title-button {
+  margin-top: -20px;
+}
+
+/* Half-text / Half-image section */
+.section-font {
+  font-family: 'Muli', sans-serif;
+}
+.section-title {
+  line-height: 32px;
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-bottom: -10px;
+}
+.section-text {
+  line-height: 27px;
+  font-size: 17px;
+}
+.section-icon {
+  font-size: 64px;
+  margin-top: 32px;
+}
+.section-link:hover {
+  color: black;
+}
+
+/* Grey separation bar */
+.separation {
+  height: 250px;
+  background: linear-gradient(to bottom, #e5e5e8, #d9d9db);
+}
+.separation-font {
+  font-family: 'Nunito', sans-serif;
+}
+.separation-title {
+  font-size: 40px;
+  font-weight: 300;
+}
+.separation-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Card 1 style */
+.card-1-margin {
+  margin: 40px 20px 30px 20px;
+}
+.horizontal .card-stacked {
+  font-family: 'Nunito', sans-serif;
+}
+.card-title:hover > .right-arrow {
+  transform: translateX(10px);
+}
+.right-arrow {
+  transition: all 0.5s;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Card 2 style */
+.image-card-bg-large {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+/* Title 2 style */
+.title-2 {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+
+/* Card 3 style */
+.image-card-bg-medium {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+}
+.card3 {
+  padding: 20px 20px 0px 20px;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px lightgrey solid;
+}
+.card3:hover > .card3-inner-text {
+  opacity: 1;
+}
+.card3-inner-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 0.2s all ease-in;
+}
+
+/* Title 3 style */
+.subtitle-3 {
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+}
+
+/* Card 4 style */
+.card-4-margin {
+  margin: 20px 20px 20px 20px;
+}
+.card-4-title {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  padding-left: 5px;
+}
+.card-4-text {
+  padding: 14px 30px 14px 5px !important;
+}
+.card4 {
+  border-radius: 5px;
+}
+.card-4:hover {
+  transform: translateY(-4px);
+  filter: grayscale(100%);
+}
+
+/* Image / text match */
+.match-title {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+}
+.match-text {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 992px) {
+  .brand-logo {
+    margin-left: 0px;
+  }
+}

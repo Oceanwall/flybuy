@@ -2,7 +2,7 @@ const remote = require('electron').remote;
 const BrowserWindow = remote.BrowserWindow;
 
 function transfer(target) {
-  let win = new BrowserWindow({ width: 1200, height: 600 });
+  let win = new BrowserWindow({ width: 1000, height: 600, resizable: false });
   win.on('closed', () => {
     win = null
   })
