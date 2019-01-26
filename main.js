@@ -9,6 +9,7 @@ function createWindow () {
   // Create the browser window.
   // Change window settings here.
   mainWindow = new BrowserWindow({width: 1000, height: 700, resizable: false})
+  mainWindow.setMenu(null);
   // and load the index.html of the app.
   mainWindow.loadFile('pages/landing_page/index.html')
 

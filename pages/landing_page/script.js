@@ -26,6 +26,7 @@ window.onload = function() {
             setTimeout(function () {
               document.getElementById("checkbox").disabled = false;
               swal("Your attendant has arrived!", {
+                icon: "success",
                 button: "Thanks!",
               });
             }, 3000);

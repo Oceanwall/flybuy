@@ -1,10 +1,11 @@
 body {
   height: 100%;
+  background-color: #e5e5e5;
 }
 .question-icon-wrapper {
   width: 50px;
   height: 50px;
-  background: yellow;
+  /* background: black; */
   text-align: center;
   border-radius: 25px;
   cursor: pointer;
@@ -18,6 +19,7 @@ body {
 }
 .question-icon {
   font-size: 32px;
+  color: white;
   transition: all 0.2s;
 }
 
@@ -60,4 +62,10 @@ body {
 }
 .switch label input[type=checkbox]:checked+.lever:before, .switch label input[type=checkbox]:checked+.lever:after {
   left: 48px;
+}
+
+.swal-text {
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }

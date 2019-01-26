@@ -3,6 +3,7 @@ const BrowserWindow = remote.BrowserWindow;
 
 function transfer(target) {
   let win = new BrowserWindow({ width: 1000, height: 700, resizable: false });
+  win.setMenu(null);
   win.on('closed', () => {
     win = null
   })
