@@ -1,0 +1,63 @@
+body {
+  height: 100%;
+}
+.question-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+
+  position: absolute;
+  margin-left: 15px;
+  margin-top: -20px;
+}
+.question-icon-wrapper:hover > .question-icon {
+  /* box-shadow: 0 4px 12px rgba(0,0,0,.25); */
+}
+.question-icon {
+  font-size: 32px;
+  transition: all 0.2s;
+}
+
+.landing-intro {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.landing-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.option-1 {
+  background-image: url("../../images/food_card.jpg");
+}
+.option-2 {
+  background-image: url("../../images/plane_card.jpg");
+}
+.option-3 {
+  background-image: url("../../images/feedback_card.jpg");
+}
+
+.landing-switch {
+  /* position: absolute; */
+  float: right;
+  margin-top: 65px;
+  margin-right: 35px;
+}
+
+.aa-logo {
+  /* position: absolute; */
+  width: 300px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 65px;
+}
+
+.switch label .lever {
+  width: 60px;
+}
+.switch label input[type=checkbox]:checked+.lever:before, .switch label input[type=checkbox]:checked+.lever:after {
+  left: 48px;
+}

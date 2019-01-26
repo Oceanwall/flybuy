@@ -17,13 +17,66 @@
     <link href="./styles.css" rel="stylesheet">
     <script src="./script.js"></script>
   </head>
-  <body>
-    <h1>Hello, David Somebody</h1>
+  <body class="center">
+    <div class="question-icon-wrapper">
+      <div class="question-icon">
+        ?
+      </div>
+    </div>
 
-    <div class="">
+    <h1 class="landing-intro">Hello, David Somebody</h1>
+
+    <div class="transparent">
+     <div class="center-align landing-container">
+      <div class="row margin-top-5">
+         <div class="col s4">
+          <div class="card purple-box-shadow standard-hover-shadow" onclick="transfer('food_page')">
+            <div class="card-image image-card-bg-large option-1">
+            </div>
+            <div class="card-content">
+              <p>Food</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+         <div class="card purple-box-shadow standard-hover-shadow" onclick="transfer('plane_map_page')">
+           <div class="card-image image-card-bg-large option-2">
+           </div>
+           <div class="card-content">
+             <p>Plane Seatmap</p>
+           </div>
+         </div>
+       </div>
+       <div class="col s4">
+        <div class="card purple-box-shadow standard-hover-shadow" onclick="transfer('service_page')">
+          <div class="card-image image-card-bg-large option-3">
+          </div>
+          <div class="card-content">
+            <p>Feedback</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="landing-switch">
+    <div class="switch" id="switch">
+      <label>
+        <!-- Off -->
+        <input type="checkbox" id="checkbox">
+        <span class="lever"></span>
+        Call Attendant
+      </label>
+    </div>
+  </div>
+
+  <!-- <img class="aa-logo" src="../../images/aa_logo.svg"></img> -->
+
+    <!-- <div class="">
       <div onclick="transfer('food_page')">Purchase Food</div>
       <div onclick="transfer('plane_map_page')">plane</div>
       <div onclick="transfer('service_page')">service</div>
-    </div>
+    </div> -->
   </body>
 </html>

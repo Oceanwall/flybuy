@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Muli:300,400,700|Nunito:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Muli:300,400,700|Nunito:300,400');
 
 /* Margin classes. Bad style, but necessary for hackathon hacking */
 .margin-top-1 {
@@ -49,11 +49,11 @@
   box-shadow: none;
 }
 .purple-box-shadow {
-  box-shadow: 0 1px 3px rgba(243,229,245);
+  box-shadow: 0 1px 3px #584563;
 }
 .standard-hover-shadow:hover {
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  box-shadow: 0 3px 9px #584563;
   transition: all 0.2s ease-in;
 }
 
@@ -158,7 +158,7 @@ h1 {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 250px;
 }
 
 /* Title 2 style */
