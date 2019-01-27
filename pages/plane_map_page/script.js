@@ -28,7 +28,7 @@ window.onload = function () {
     if (err) {
       console.log(err);
     }
-    console.log(data);
+
     let lines = data.toString().split('\n');
     let name = lines[0];
     let start = lines[1];
@@ -56,7 +56,7 @@ window.onload = function () {
 
 function writeSecond() {
   let dep = endInfo.departureTime;
-  let depTime = dep.hour + ':' + dep.minute;
+  let depTime = dep.hour.pad() + ':' + dep.minute.pad();
   let minutesAfter = Math.floor(Math.random() * 20);
   let actDep = moment(depTime, 'HH:mm').add(minutesAfter, 'minutes').format("HH:mm");
 
@@ -76,4 +76,11 @@ function writeSecond() {
   document.getElementById("flight3-text").style.opacity = 1;
   document.getElementById("flight4-text").style.opacity = 1;
   document.getElementById("flight5-text").style.opacity = 1;
+}
+
+// https://stackoverflow.com/questions/2998784/how-to-output-integers-with-leading-zeros-in-javascript
+Number.prototype.pad = function (size) {
+  var s = String(this);
+  while (s.length < (size || 2)) { s = "0" + s; }
+  return s;
 }
