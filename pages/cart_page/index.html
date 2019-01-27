@@ -14,6 +14,7 @@
     <link href="../../styles/global.css" rel="stylesheet">
     <script src="../../scripts/global.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="./styles.css" rel="stylesheet">
     <script src="./script.js"></script>
 </head>
@@ -23,25 +24,38 @@
         <i class="material-icons">keyboard_backspace</i>
     </button>
 </div>
-    <form>
+    <h2>Cart</h2>
+<br>
+<br>
+    <div class="cartForm" action="#">
         <div class="close">
-            <label></label>
-                <i class="material-icons">remove_circle_outline</i>
+            <span>
+            <label id="meal"></label>
+            </span>
+            <span  class="removal" onclick="removeItem('Entree');">
+
+                <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="close">
-            <label></label>
-                <i class="material-icons">remove_circle_outline</i>
+            <span>
+                <label id="drink"></label>
+            </span>
+            <span  class="removal"  onclick="removeItem('Drink');">
+                <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="close">
-            <label></label>
-                <i class="material-icons">remove_circle_outline</i>
+            <span>
+                <label id="snack"></label>
+            </span>
+            <span class="removal"  onclick="removeItem('Snack');">
+                <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="center" onclick="submitFunc()" >
-            <button class="btn waves-effect waves-light submitbtn" type="submit" name="action"
+            <button class="btn waves-effect waves-light submitbtn" name="action"
                     id="submitbtn">Checkout
                 <i class="material-icons right">shopping_cart</i>
             </button>
         </div>
-    </form>
+    </div>
 </body>
 </html>

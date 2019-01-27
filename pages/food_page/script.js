@@ -1,10 +1,21 @@
 var fs = require('fs')
 
-window.onload=function() {
-
-};
 
 var items = {};
+
+window.onload=function() {
+    fs.readFile('data/foodPersistence.json', 'utf8', function (err, data) {
+        if (err) throw err
+        items = JSON.parse(data)
+
+        var length =0;
+        for (var i in items) {
+            if (items.hasOwnProperty(i)) length++;
+        }
+        var x = document.getElementById("cartspan");
+        x.innerText = length + x.innerText.substring(1, x.innerText.length);
+    })
+};
 
 function AddToShoppingCart(name, type) {
     if (type in items) {

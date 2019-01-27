@@ -10,3 +10,26 @@ div.close {
     margin:auto;
     
 }
+
+div.cartForm {
+    margin:auto;
+    text-align: center;
+}
+
+h2 {
+    margin:auto;
+    text-align: center;
+}
+div div span {
+    margin:auto;
+
+}
+
+.removal {
+    cursor : pointer;
+}
+div div span label {
+    font-size:25px;
+    margin:auto;
+    color:black;
+}

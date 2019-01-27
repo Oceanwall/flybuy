@@ -50,6 +50,11 @@ function createWindow() {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
+    var stream = fs.createWriteStream('data/foodPersistence.json');
+    stream.once('open', function (fd) {
+      stream.write("\n");
+      stream.end()
+    });
     mainWindow = null
   })
 }
