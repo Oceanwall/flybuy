@@ -5,10 +5,12 @@ const categories = ['Drink', 'Entree', 'Snack'];
 
 window.onload = function () {
   fs.readFile('data/foodPersistence.json', 'utf8', function (err, data) {
-    if (err) throw err
+    if (err) throw err;
     foodList = JSON.parse(data);
 
     fs.readFile('data/items.json', 'utf8', function (err, data) {
+      if (err) throw err;
+
       let itemsInfo = JSON.parse(data);
       let total = 0;
       for (let category of categories) {
