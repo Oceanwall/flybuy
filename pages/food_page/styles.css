@@ -5,15 +5,85 @@
 }
 .food-hover-shadow {
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in;
 }
 .food-hover-shadow:hover {
   /* box-shadow: 0 2px 2px lightgrey; */
   box-shadow: none;
-  transform: rotateY(180deg);
-  background-color: white;
+}
+.card-image  {
+  animation: changeAwayImage 0.7s;
+  animation-fill-mode: forwards;
+}
+.card-descript-text {
+  animation: changeAwayText 0.7s;
+  animation-fill-mode: forwards;
 }
 .food-hover-shadow:hover > .card-image {
+  animation: changeTowardsImage 0.7s;
+  animation-fill-mode: forwards;
+}
+.food-hover-shadow:hover > .card-image > .card-descript-text {
+  /* opacity: 1; */
+  animation: changeTowardsText 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeTowardsImage {
+  /* You could think of as "step 1" */
+  0% {
+    transform: rotateY(0deg);
+  }
+  90 % {
+    transform: rotateY(160deg);
+  }
+  /* You could think of as "step 2" */
+  100% {
+    transform: rotateY(180deg);
+    background: rgba(0,0,255,0);
+  }
+}
+@keyframes changeTowardsText {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 0;
+  }
+  99 % {
+    opacity: 0;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes changeAwayImage {
+  0% {
+    transform: rotateY(180deg);
+    background: rgba(0,0,255,0);
+  }
+  10 % {
+    transform: rotateY(160deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes changeAwayText {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 1;
+  }
+  1 % {
+    opacity: 0;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: 0;
+  }
+}
+
+.card-descript-text {
+  transform: rotateY(180deg);
   opacity: 0;
 }
 .card-image, .card3-inner-text {
