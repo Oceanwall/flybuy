@@ -3,7 +3,7 @@
 <h1 align="center">
   <br>
     <a href="">
-      <img src="https://raw.githubusercontent.com/Oceanwall/flybuy/master/images/logo.svg" alt="flybuy" width="200">
+      <img src="https://raw.githubusercontent.com/Oceanwall/flybuy/master/images/logo.png" alt="flybuy" width="200">
     </a>
   <br>
   flybuy
