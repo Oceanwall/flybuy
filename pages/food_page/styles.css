@@ -12,8 +12,7 @@
 }
 
 .food-hover-shadow:hover {
-    /* box-shadow: 0 2px 2px lightgrey; */
-    box-shadow: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
 }
 .card-image  {
     animation: changeAwayImage 0.7s;
@@ -57,6 +56,10 @@ div.glut {
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.plane-card-shadow:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
 }
 
 .card-image:hover {

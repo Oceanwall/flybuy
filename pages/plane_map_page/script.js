@@ -7,8 +7,8 @@ let endInfo = {};
 
 function loadImg() {
   let pic = Math.floor(Math.random() * (10));
-  // let time=Math.floor(Math.random() * (15000 - 5000) + 5000);
-  let time = 500;
+  let time=Math.floor(Math.random() * (5000) + 5000);
+  // let time = 500;
   document.getElementById("bathrooms").src = "../../images/bathrooms/seat_plan_" + pic + ".png";
   setTimeout(loadImg, time);
 }
@@ -20,7 +20,7 @@ window.onload = function () {
     transfer("food_page");
   }
 
-  document.getElementById("flight5-text").onclick = function () {
+  document.getElementById("flight6-text").onclick = function () {
     transfer("service_page");
   }
 
@@ -45,7 +45,7 @@ window.onload = function () {
       var options = {
         showCursor: false,
         strings: [`Name: ${name} ${lineStop} AAdvantage Status: <span class="yellow-text text-darken-3">Gold</span> ${lineStop} Origin Airport: ${start} ${lineStop} Destination Airport: ${end} ${lineStop}`],
-        typeSpeed: 1,
+        typeSpeed: 20,
         onComplete: writeSecond
       };
 
@@ -76,6 +76,7 @@ function writeSecond() {
   document.getElementById("flight3-text").style.opacity = 1;
   document.getElementById("flight4-text").style.opacity = 1;
   document.getElementById("flight5-text").style.opacity = 1;
+  document.getElementById("flight6-text").style.opacity = 1;
 }
 
 // https://stackoverflow.com/questions/2998784/how-to-output-integers-with-leading-zeros-in-javascript
