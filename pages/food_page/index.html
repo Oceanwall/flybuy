@@ -14,6 +14,7 @@
     <link href="../../styles/global.css" rel="stylesheet">
     <script src="../../scripts/global.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="./styles.css" rel="stylesheet">
     <script src="./script.js"></script>
   </head>
@@ -23,65 +24,124 @@
     <button onclick="transfer('landing_page');" class="btn waves-effect waves-light left">
       <i class="material-icons">keyboard_backspace</i>
     </button>
-    <button onclick="transfer('cart_page');" class="btn waves-effect waves-light right">
-      <i class="material-icons">shopping_cart</i>
+    <button onclick="transfer('cart_page');" class="btn waves-effect waves-light right" id ="cartbutton">0
+      <!--0<i class="material-icons">shopping_cart</i>-->
     </button>
   </div>
-  <h2 class="menuheader">Menu</h2>
+    <h3 class="header4">Entrees</h3>
 
-    <div class="center food-container">
-      <div id="fade-in-cards" class="row margin-top-5 no-margin-bottom">
-       <div class="col s3">
-         <div class="card card3 right-align food-hover-shadow">
-           <div class="card-image waves-effect waves-block waves-light food-image-1 image-card-bg-medium"></div>
-           <div class="card3-inner-text grey-text text-darken-1">Purchase></div>
-         </div>
-       </div>
-       <div class="col s3">
-         <div class="card card3 right-align food-hover-shadow">
-           <div class="card-image waves-effect waves-block waves-light food-image-2 image-card-bg-medium"></div>
-           <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
-         </div>
-       </div>
-       <div class="col s3">
-         <div class="card card3 right-align food-hover-shadow">
-           <div class="card-image waves-effect waves-block waves-light food-image-3 image-card-bg-medium"></div>
-           <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
-         </div>
-       </div>
-       <div class="col s3">
-         <div class="card card3 right-align food-hover-shadow">
-           <div class="card-image waves-effect waves-block waves-light food-image-4 image-card-bg-medium"></div>
-           <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
-         </div>
-       </div>
-     </div>
-   </div>
-
+  <hr>
   <div class="center food-container">
-    <div id="fade-in-cards2" class="row margin-top-5 no-margin-bottom">
+    <div id="fade-in-cards" class="row margin-top-5 no-margin-bottom">
       <div class="col s3">
         <div class="card card3 right-align food-hover-shadow">
           <div class="card-image waves-effect waves-block waves-light food-image-1 image-card-bg-medium"></div>
-          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Entree');">
+              <i class="material-icons">add_shopping_cart</i>
+          </div>
         </div>
       </div>
       <div class="col s3">
         <div class="card card3 right-align food-hover-shadow">
           <div class="card-image waves-effect waves-block waves-light food-image-2 image-card-bg-medium"></div>
-          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Entree');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
         </div>
       </div>
       <div class="col s3">
         <div class="card card3 right-align food-hover-shadow">
           <div class="card-image waves-effect waves-block waves-light food-image-3 image-card-bg-medium"></div>
-          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Entree');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="header4">Drinks</h3>
+  <hr>
+  <div class="center food-container">
+    <div id="fade-in-cards2" class="row margin-top-5 no-margin-bottom">
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-4 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Drink');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
         </div>
       </div>
       <div class="col s3">
         <div class="card card3 right-align food-hover-shadow">
-          <div class="card-image waves-effect waves-block waves-light food-image-4 image-card-bg-medium"></div>
-          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+          <div class="card-image waves-effect waves-block waves-light food-image-5 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Drink');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-6 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Drink');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-7 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Drink');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-8 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Drink');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="header4">Snacks</h3>
+  <hr>
+
+  <div class="center food-container">
+    <div id="fade-in-cards3" class="row margin-top-5 no-margin-bottom">
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-9 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Snack');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-10 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Snack');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-11 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Snack');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-12 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1" onclick="AddToShoppingCart('', 'Snack');">
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
         </div>
       </div>
     </div>
