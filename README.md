@@ -12,10 +12,11 @@ Electron app that enhances the American Airlines in-flight experience. Built at 
 ## Features
 
 - Ordering food and drink
-- Viewing a floor plan of the airplane
-- Seeing real time bathroom availability
+- Floor plan of the airplane
+- Real time bathroom availability
 - Calling a flight attendant
-- Providing customer feedback
+- Customer feedback
+- Support for 11 international languages
 
 ## Creators
 
