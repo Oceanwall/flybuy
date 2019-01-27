@@ -20,6 +20,10 @@ window.onload = function () {
     transfer("food_page");
   }
 
+  document.getElementById("flight5-text").onclick = function () {
+    transfer("service_page");
+  }
+
   fs.readFile('data/persistence.txt', 'utf8', function (err, data) {
     if (err) {
       console.log(err);
@@ -71,4 +75,5 @@ function writeSecond() {
   document.getElementById("flight2-text").style.opacity = 1;
   document.getElementById("flight3-text").style.opacity = 1;
   document.getElementById("flight4-text").style.opacity = 1;
+  document.getElementById("flight5-text").style.opacity = 1;
 }
