@@ -14,7 +14,11 @@ function createWindow () {
   mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
+<<<<<<< HEAD
    //mainWindow.webContents.openDevTools()
+=======
+  // mainWindow.webContents.openDevTools()
+>>>>>>> b22e87bb0a3d8f200a1a5cd27e9fd775bc86f0e5
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
