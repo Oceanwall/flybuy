@@ -32,7 +32,7 @@ flybuy has various features to improve the customer experience onboard a flight.
 
 ## How we built it
 
-We used a web front-end based on Electron to provide cross platform compatibility and a Node.js back-end utilizing the American Airlines Mock Engine data. For the front-end, we used HTML5, CSS3, and JavaScript along with the Materialize framework to create an intuitive user interface.
+We used a web front-end based on Electron to provide cross platform compatibility and a Node.js back-end utilizing the American Airlines Mock Engine data. For the front-end, we used HTML5, CSS3, and JavaScript along with the Materialize framework to create an intuitive user interface. To support translations, we used Microsoft Azure Cognitive Services in our back-end.
 
 ## Challenges we ran into
 
