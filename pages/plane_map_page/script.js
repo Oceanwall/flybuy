@@ -12,10 +12,14 @@ function loadImg() {
 window.onload=function() {
     loadImg();
 
+    document.getElementById("flight3-text").onclick = function() {
+      transfer("food_page");
+    }
+
     var options = {
       showCursor: false,
       strings: [`Name: John Somebody ${lineStop} AAdvantage Status: <span class="yellow-text text-darken-3">Gold</span> ${lineStop} Origin Airport: DFW ${lineStop} Destination Airport: NRT ${lineStop}`],
-      typeSpeed: 20,
+      typeSpeed: 1,
       onComplete: writeSecond
     };
 
@@ -25,4 +29,6 @@ window.onload=function() {
 function writeSecond() {
   document.getElementById("flight-text").style.opacity = 1;
   document.getElementById("flight2-text").style.opacity = 1;
+  document.getElementById("flight3-text").style.opacity = 1;
+  document.getElementById("flight4-text").style.opacity = 1;
 }
