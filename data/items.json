@@ -20,6 +20,20 @@
         "gf": true,
         "type": "meal"
     },
+    "Lasagna": {
+        "img": "food/lasagna.jpg",
+        "price": 8.99,
+        "veg": false,
+        "gf": false,
+        "type": "meal"
+    },
+    "Mac and Cheese": {
+        "img": "food/macandcheese.jpg",
+        "price": 6.99,
+        "veg": true,
+        "gf": false,
+        "type": "meal"
+    },
     "Apple Juice": {
         "img": "food/applejuice.jpg",
         "price": 1.99,

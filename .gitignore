@@ -4,3 +4,4 @@ node_modules
 .idea/
 data/persistence.txt
 data/foodPersistence.json
+data/language.json

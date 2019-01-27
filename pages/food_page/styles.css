@@ -199,6 +199,14 @@ h3.header4 {
     background-image: url("../../images/food/trail-mix.jpg");
 }
 
+.food-image-13 {
+    background-image: url("../../images/food/lasagna.jpg");
+}
+
+.food-image-14 {
+    background-image: url("../../images/food/macandcheese.jpg");
+}
+
 .food-container {
   margin-top: 15px;
     /* margin-left: 95px; */
