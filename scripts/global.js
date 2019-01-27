@@ -13,7 +13,8 @@ function transfer(target) {
     win = null
   })
   win.loadURL("file://" + __dirname + `/../${target}/index.html`);
-  //
-  // let current = remote.getCurrentWindow();
-  // current.close();
+
+  // Matthew why did you comment this out? We don't want infinite windows.
+  let current = remote.getCurrentWindow();
+  current.close();
 }
