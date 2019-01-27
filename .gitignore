@@ -2,3 +2,5 @@ node_modules
 *.swp
 *.pdn
 .idea/
+data/persistence.txt
+data/foodPersistence.json
