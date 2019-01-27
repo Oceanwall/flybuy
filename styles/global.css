@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Muli:300,400,700|Nunito:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Muli:300,400,700|Nunito:300,400');
 
 /* Margin classes. Bad style, but necessary for hackathon hacking */
 .margin-top-1 {
@@ -49,11 +49,11 @@
   box-shadow: none;
 }
 .purple-box-shadow {
-  box-shadow: 0 1px 3px rgba(243,229,245);
+  box-shadow: 0 1px 3px #584563;
 }
 .standard-hover-shadow:hover {
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  box-shadow: 0 3px 9px #584563;
   transition: all 0.2s ease-in;
 }
 
@@ -171,11 +171,12 @@ h1 {
 .image-card-bg-medium {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 200px;
 }
 .card3 {
-  padding: 20px 20px 0px 20px;
+  /* padding: 20px 20px 0px 20px; */
+  padding: 0px;
   box-shadow: none;
   border-radius: 5px;
   border: 1px lightgrey solid;
@@ -190,6 +191,20 @@ h1 {
   margin-top: 20px;
   opacity: 0;
   transition: 0.2s all ease-in;
+  margin-right: 20px;
+}
+
+.food-image-1 {
+  background-image: url("../images/food-image-1.jpg");
+}
+.food-image-2 {
+  background-image: url("../images/food-image-2.jpg");
+}
+.food-image-3 {
+  background-image: url("../images/food-image-3.jpg");
+}
+.food-image-4 {
+  background-image: url("../images/food-image-4.jpg");
 }
 
 /* Title 3 style */
