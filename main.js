@@ -16,7 +16,7 @@ function createWindow() {
     mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   fs.readFile('data/users.json', 'utf8', function (err, data) {
     if (err) throw err

@@ -2,6 +2,14 @@ const swal = require('sweetalert');
 const fs = require('fs');
 
 window.onload = function() {
+
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems);
+
+  document.getElementById("selecto").onchange = function() {
+    console.log(document.getElementById("selecto").value);
+  }
+
   document.getElementById("switch").onclick = function() {
     if (document.getElementById("checkbox").disabled) {
       // DOn't do anything
@@ -44,7 +52,7 @@ window.onload = function() {
     }
     document.getElementById("nameTitle").innerHTML = 'Hello, ' + data.toString().split('\n')[0];
   });
-  
+
 }
 
 function eventFire(el, etype){

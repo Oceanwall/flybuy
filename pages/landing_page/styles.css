@@ -26,6 +26,16 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+.language-settings {
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.language-settings:hover {
+  transform: rotateY(720deg);
+}
 
 .option-1 {
   background-image: url("../../images/food_card.jpg");
