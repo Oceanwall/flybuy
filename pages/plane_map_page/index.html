@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <div onclick="transfer('landing_page')">Go Back</div>
   <head>
     <meta charset="UTF-8">
     <title>flybuy</title>
@@ -19,11 +18,36 @@
     <script src="./script.js"></script>
   </head>
   <body>
+    <div onclick="transfer('landing_page');" class="backbtndiv">
+      <button class="btn waves-effect waves-light backbtn">
+        <i class="material-icons">keyboard_backspace</i>
+      </button>
+    </div>
+
     <div class="center">
-        <h1>Plane Map</h1>
-
-        <img id="bathrooms">
-
+      <h1 class="title">Plane Map</h1>
+    </div>
+    <div class="row">
+      <div class="col s6 center">
+        <div class="plane-card">
+          <img id="bathrooms" class="bathrooms">
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="plane-card" id="info-start">
+          <p id="name-text"></p>
+        </div>
+        <!-- TODO: Transition in additional information about flight -->
+        <div class="plane-card">
+          <p></p>
+        </div>
+        <div class="plane-card">
+          <p></p>
+        </div>
+        <div class="plane-card">
+          <p></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

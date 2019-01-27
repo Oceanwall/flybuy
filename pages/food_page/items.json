@@ -1,0 +1,86 @@
+{
+    "California Veggie Sandwich": {
+        "img": "food/caliveggie.jpg",
+        "price": 6.99,
+        "veg": true,
+        "gf": false,
+        "type": "meal"
+    },
+    "California Chicken Sandwich": {
+        "img": "food/calichicken.jpg",
+        "price": 7.99,
+        "veg": false,
+        "gf": false,
+        "type": "meal"
+    },
+    "Mediterranean Salad": {
+        "img": "food/salad.jpg",
+        "price": 6.99,
+        "veg": true,
+        "gf": true,
+        "type": "meal"
+    },
+    "Apple Juice": {
+        "img": "food/applejuice.jpg",
+        "price": 1.99,
+        "veg": false,
+        "gf": false,
+        "type": "drink"
+    },
+    "Orange Juice": {
+        "img": "food/orangejuice.jpg",
+        "price": 1.99,
+        "veg": false,
+        "gf": false,
+        "type": "drink"
+    },
+    "Red Wine": {
+        "img": "food/redwine.png",
+        "price": 20.99,
+        "veg": false,
+        "gf": false,
+        "type": "drink"
+    },
+    "Coke": {
+        "img": "food/coke.jpg",
+        "price": 2.99,
+        "veg": false,
+        "gf": false,
+        "type": "drink"
+    },
+    "Sprite": {
+        "img": "food/sprite.jpg",
+        "price": 2.99,
+        "veg": false,
+        "gf": false,
+        "type": "drink"
+    },
+    "Lay's Classic Chips": {
+        "img": "food/lays-classic.jpg",
+        "price": "3.99",
+        "veg": false,
+        "gf": false,
+        "type": "snack"
+    },
+    "Lay's Kettle Cooked Jalapeno Chips": {
+        "img": "food/lays-kettle-jalapeno.jpg",
+        "price": 4.99,
+        "veg": false,
+        "gf": false,
+        "type": "snack"
+    },
+    "Pretzels": {
+        "img": "food/pretzels.jpg",
+        "price": 3.99,
+        "veg": false,
+        "gf": false,
+        "type": "snack"
+    },
+    "Trail Mix": {
+        "img": "food/trail-mix.jpg",
+        "price": 2.99,
+        "veg": false,
+        "gf": false,
+        "type": "snack"
+    }
+}

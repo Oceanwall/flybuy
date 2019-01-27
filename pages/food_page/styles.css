@@ -1,3 +1,4 @@
+
 .food-container {
   margin-left: 50px;
   margin-right: 50px;
@@ -9,4 +10,62 @@
 .food-hover-shadow:hover {
   /* box-shadow: 0 2px 2px lightgrey; */
   box-shadow: none;
+}
+
+h2.menuheader {
+    text-align: center;
+    margin:auto;
+}
+
+div.top {
+    margin:15px;
+}
+
+h3.header4 {
+    margin:auto;
+    text-align: center;
+}
+
+
+.food-image-1 {
+    background-image: url("../../images/food/caliveggie.jpg");
+}
+.food-image-2 {
+    background-image: url("../../images/food/calichicken.jpg");
+}
+.food-image-3 {
+    background-image: url("../../images/food/salad.jpg");
+}
+.food-image-4 {
+    background-image: url("../../images/food/applejuice.jpg");
+}
+
+.food-image-5 {
+    background-image: url("../../images/food/orangejuice.jpg");
+}
+
+.food-image-6 {
+    background-image: url("../../images/food/redwine.png");
+}
+
+.food-image-7 {
+    background-image: url("../../images/food/coke.jpg");
+}
+.food-image-8 {
+    background-image: url("../../images/food/sprite.jpg");
+}
+
+.food-image-9 {
+    background-image: url("../../images/food/lays-classic.jpg");
+}
+
+.food-image-10 {
+    background-image: url("../../images/food/lays-kettle-jalapeno.jpg");
+}
+.food-image-11 {
+    background-image: url("../../images/food/pretzels.jpg");
+}
+
+.food-image-12 {
+    background-image: url("../../images/food/trail-mix.jpg");
 }
