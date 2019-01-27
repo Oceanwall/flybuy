@@ -57,12 +57,12 @@
     },
     "Lay's Classic Chips": {
         "img": "food/lays-classic.jpg",
-        "price": "3.99",
+        "price": 3.99,
         "veg": false,
         "gf": false,
         "type": "snack"
     },
-    "Lay's Kettle Cooked Jalapeno Chips": {
+    "Lay's Kettle Cooked Chips": {
         "img": "food/lays-kettle-jalapeno.jpg",
         "price": 4.99,
         "veg": false,
