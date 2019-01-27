@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="../../styles/box-shadows.min.css" rel="stylesheet">
+
+    <link href="../../styles/global.css" rel="stylesheet">
+    <script src="../../scripts/global.js"></script>
+
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+<div class="top">
+    <button onclick="transfer('food_page');" class="btn waves-effect waves-light">
+        <i class="material-icons">keyboard_backspace</i>
+    </button>
+</div>
+
+    <form>
+        <div class="center" onclick="submitFunc()" >
+            <button class="btn waves-effect waves-light submitbtn" type="submit" name="action"
+                    id="submitbtn">Checkout
+                <i class="material-icons right">shopping_cart</i>
+            </button>
+        </div>
+    </form>
+</body>
+</html>

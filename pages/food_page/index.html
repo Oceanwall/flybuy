@@ -18,18 +18,23 @@
     <script src="./script.js"></script>
   </head>
   <body>
-    <h1>HOWDY food</h1>
-    <!-- TO CHANGE -->
-    <div onclick="transfer('food_page')">food</div>
-    <div onclick="transfer('plane_map_page')">plane</div>
-    <div onclick="transfer('service_page')">service</div>
+
+  <div class="top">
+    <button onclick="transfer('landing_page');" class="btn waves-effect waves-light left">
+      <i class="material-icons">keyboard_backspace</i>
+    </button>
+    <button onclick="transfer('cart_page');" class="btn waves-effect waves-light right">
+      <i class="material-icons">shopping_cart</i>
+    </button>
+  </div>
+  <h2 class="menuheader">Menu</h2>
 
     <div class="center food-container">
       <div id="fade-in-cards" class="row margin-top-5 no-margin-bottom">
        <div class="col s3">
          <div class="card card3 right-align food-hover-shadow">
            <div class="card-image waves-effect waves-block waves-light food-image-1 image-card-bg-medium"></div>
-           <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+           <div class="card3-inner-text grey-text text-darken-1">Purchase></div>
          </div>
        </div>
        <div class="col s3">
@@ -52,6 +57,35 @@
        </div>
      </div>
    </div>
+
+  <div class="center food-container">
+    <div id="fade-in-cards2" class="row margin-top-5 no-margin-bottom">
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-1 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-2 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-3 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card card3 right-align food-hover-shadow">
+          <div class="card-image waves-effect waves-block waves-light food-image-4 image-card-bg-medium"></div>
+          <div class="card3-inner-text grey-text text-darken-1">Purchase Leetcode ></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
