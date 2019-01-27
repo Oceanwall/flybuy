@@ -5,9 +5,6 @@
     <a href="">
       <img src="https://raw.githubusercontent.com/Oceanwall/flybuy/master/images/logo.png" alt="flybuy" width="200">
     </a>
-  <br>
-  flybuy
-  <br>
 </h1>
 
 ## To Use
