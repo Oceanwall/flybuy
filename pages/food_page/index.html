@@ -21,16 +21,20 @@
 <body>
 
 <div class="top">
-  <button onclick="transfer('landing_page');" class="btn waves-effect waves-light left">
+  <button onclick="transfer('landing_page');" class="btn waves-effect waves-light left" id="back_button">
     <i class="material-icons">keyboard_backspace</i>
   </button>
   <button onclick="toShoppingCart();" class="btn waves-effect waves-light right" id ="cartbutton">
     <span id="cartspan">0</span><i class="material-icons">shopping_cart</i>
   </button>
 </div>
+<div class="center">
 <h3 class="header4">Entrees</h3>
+</div>
 
-<hr>
+<div class="food-container">
+  <hr>
+</div>
 <div class="center food-container">
   <div id="fade-in-cards" class="row margin-top-5 no-margin-bottom">
     <div class="col s3">
@@ -67,7 +71,9 @@
 </div>
 <br>
 <h3 class="header4">Drinks</h3>
-<hr>
+  <div class="food-container">
+  <hr>
+</div>
 <div class="center food-container">
   <div id="fade-in-cards2" class="row margin-top-5 no-margin-bottom">
     <div class="col s3">
@@ -124,7 +130,9 @@
 </div>
 <br>
 <h3 class="header4">Snacks</h3>
-<hr>
+<div class="food-container">
+  <hr>
+</div>
 
 <div class="center food-container">
   <div id="fade-in-cards3" class="row margin-top-5 no-margin-bottom">
