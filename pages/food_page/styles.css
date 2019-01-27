@@ -26,7 +26,7 @@
     line-height: 35px;
 }
 .card-image div {
-  
+
 }
 
 hr {
@@ -59,11 +59,11 @@ div.glut {
   margin-right: 5px;
 }
 
-.food-hover-shadow:hover > .card-image {
+.card-image:hover {
     animation: changeTowardsImage 0.7s;
     animation-fill-mode: forwards;
 }
-.food-hover-shadow:hover > .card-image > .card-descript-text {
+.card-image:hover > .card-descript-text {
     /* opacity: 1; */
     animation: changeTowardsText 0.7s;
     animation-fill-mode: forwards;

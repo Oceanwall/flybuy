@@ -26,45 +26,63 @@
             <i class="material-icons">keyboard_backspace</i>
         </button>
     </div>
-    <h2>Cart</h2>
+    <h2>Confirm Purchase</h2>
     <br>
     <br>
     <div class="cartForm" action="#">
-        <div class="close">
-            <span>
-                <label class="type" id="entree"></label>
-                <label class="price" id="entreePrice"></label>
-            </span>
+        <div class="close row">
+          <div class="col s8">
+            <label class="type" id="entree"></label>
+          </div>
+          <div class="col s2 left">
+            <label class="price" id="entreePrice"></label>
+          </div>
+          <div class="col s2">
             <span class="removal" onclick="removeItem('Entree');">
+              <i class="material-icons cart-icon">remove_circle_outline</i></span>
+          </div>
+        </div>
 
-                <i class="material-icons">remove_circle_outline</i></span>
-        </div>
-        <div class="close">
-            <span>
-                <label class="type" id="drink"></label>
-                <label class="price" id="drinkPrice"></label>
-            </span>
+        <div class="close row">
+          <div class="col s8">
+            <label class="type" id="drink"></label>
+          </div>
+          <div class="col s2 left">
+            <label class="price" id="drinkPrice"></label>
+          </div>
+          <div class="col s2">
             <span class="removal" onclick="removeItem('Drink');">
-                <i class="material-icons">remove_circle_outline</i></span>
+              <i class="material-icons cart-icon">remove_circle_outline</i></span>
+          </div>
         </div>
-        <div class="close">
-            <span>
-                <label class="type" id="snack"></label>
-                <label class="price" id="snackPrice"></label>
-            </span>
+
+        <div class="close row">
+          <div class="col s8">
+            <label class="type" id="snack"></label>
+          </div>
+          <div class="col s2 left">
+            <label class="price" id="snackPrice"></label>
+          </div>
+          <div class="col s2">
             <span class="removal" onclick="removeItem('Snack');">
-                <i class="material-icons">remove_circle_outline</i></span>
+              <i class="material-icons cart-icon">remove_circle_outline</i></span>
+          </div>
         </div>
-        <div class="close">
-            <span>
-                <label class="type" id="total">Total</label>
-                <label class="price" id="totalPrice"></label>
-            </span>
+
+        <div class="close row">
+          <div class="col s8">
+            <label class="type" id="total">Total</label>
+          </div>
+          <div class="col s2 left">
+            <label class="price" id="totalPrice"></label>
+          </div>
+          <div class="col s2"></div>
         </div>
-        <div class="center" onclick="submitFunc()">
-            <button class="btn waves-effect waves-light submitbtn" name="action" id="submitbtn">Checkout
-                <i class="material-icons right">shopping_cart</i>
-            </button>
+
+        <div class="center">
+            <a class="btn-large tooltipped btn waves-effect waves-light submitbtn" name="action" id="submitbtn" onclick="submitFunc()">Checkout!
+                <i class="material-icons cart-icon right">shopping_cart</i>
+            </a>
         </div>
     </div>
 </body>

@@ -13,10 +13,10 @@ function createWindow() {
   mainWindow.setMenu(null);
   mainWindow.setIcon("./images/apple-touch-icon.png");
   // and load the index.html of the app.
-    mainWindow.loadFile('pages/landing_page/index.html')
+    mainWindow.loadFile('pages/cart_page/index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   fs.readFile('data/users.json', 'utf8', function (err, data) {
     if (err) throw err

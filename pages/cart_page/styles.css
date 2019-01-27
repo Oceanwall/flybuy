@@ -8,13 +8,20 @@ div.top {
 
 div.close {
     margin:auto;
-    
+
 }
 
 div.cartForm {
     margin:auto;
     text-align: center;
-    max-width: 500px; 
+    max-width: 500px;
+}
+
+.type, .price {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 30px;
 }
 
 label.type {
@@ -22,8 +29,8 @@ label.type {
     float: left;
 }
 
-label.price {
-    text-align: right;
+.left {
+  text-align: left;
 }
 
 span.removal {
@@ -50,4 +57,9 @@ div div span label {
     font-size:25px;
     margin:auto;
     color:black;
+}
+
+.cart-icon {
+  font-size: 36px;
+  line-height: 48px;
 }

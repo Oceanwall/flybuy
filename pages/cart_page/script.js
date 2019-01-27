@@ -4,6 +4,9 @@ let foodList = {};
 const categories = ['Drink', 'Entree', 'Snack'];
 
 window.onload = function () {
+  var elems = document.querySelectorAll('.tooltipped');
+  var instances = M.Tooltip.init(elems, {"position": "top", "html": "Make sure to have your credit card ready!"});
+
   fs.readFile('data/foodPersistence.json', 'utf8', function (err, data) {
     if (err) throw err;
     foodList = JSON.parse(data);
