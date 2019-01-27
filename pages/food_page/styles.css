@@ -24,6 +24,10 @@
 
 }
 
+hr {
+    width:90%;
+}
+
 span.veg {
     background-color: lightgreen;
     font-size: 18px;

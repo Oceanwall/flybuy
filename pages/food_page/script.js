@@ -19,12 +19,20 @@ function AddToShoppingCart(name, type) {
 }
 
 function toShoppingCart() {
-    var stream = fs.createWriteStream('data/foodPersistence.json');
-    stream.once('open', function (fd) {
-        stream.write(JSON.stringify(items));
-        stream.end()
+    var length =0;
+    for (var i in items) {
+        if (items.hasOwnProperty(i)) length++;
+    }
+    if (length > 0) {
+        var stream = fs.createWriteStream('data/foodPersistence.json');
+        stream.once('open', function (fd) {
+            stream.write(JSON.stringify(items));
+            stream.end()
 
-        transfer('cart_page');
-    });
+            transfer('cart_page');
+        });
+    } else {
+        M.toast({html:"Cannot checkout with no items!", displayLength:2000});
+    }
 
 }
