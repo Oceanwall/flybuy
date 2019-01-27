@@ -18,7 +18,8 @@ window.onload = function () {
           let item = foodList[category];
           let price = itemsInfo[item].price;
           total += price;
-          document.getElementById(category.toLowerCase()).innerText = item + ' $' + price;
+          document.getElementById(category.toLowerCase()).innerText = item;
+          document.getElementById(category.toLowerCase() + 'Price').innerText = '$' + price;
         } else {
           document.getElementById(category.toLowerCase()).parentElement.parentElement.hidden = true;
         }
@@ -29,18 +30,18 @@ window.onload = function () {
 }
 
 function removeItem(type) {
-  let totalStr = document.getElementById("total").innerText;
-  let total = parseFloat(totalStr.slice(totalStr.indexOf('$') + 1));
-  let element = document.getElementById(type.toLowerCase());
+  let totalStr = document.getElementById("totalPrice").innerText;
+  let total = parseFloat(totalStr.slice(1));
+  let element = document.getElementById(type.toLowerCase() + 'Price');
   element.parentElement.parentElement.hidden = true;
-  total -= parseFloat(element.innerText.slice(element.innerText.indexOf('$') + 1));
+  total -= parseFloat(element.innerText.slice(1));
   setTotalPrice(total);
   delete foodList[type];
 }
 
 function setTotalPrice(total) {
   if (total > 0)
-    document.getElementById("total").innerText = "Total $" + total.toFixed(2);
+    document.getElementById("totalPrice").innerText = '$' + total.toFixed(2);
   else
     document.getElementById("total").parentElement.parentElement.hidden = true;
 }

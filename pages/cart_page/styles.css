@@ -14,6 +14,24 @@ div.close {
 div.cartForm {
     margin:auto;
     text-align: center;
+    max-width: 500px; 
+}
+
+label.type {
+    text-align: left;
+    float: left;
+}
+
+label.price {
+    text-align: right;
+}
+
+span.removal {
+    float: right;
+}
+
+label#total {
+    font-weight: bold;
 }
 
 h2 {

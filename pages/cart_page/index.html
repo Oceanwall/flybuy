@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
@@ -18,49 +19,54 @@
     <link href="./styles.css" rel="stylesheet">
     <script src="./script.js"></script>
 </head>
+
 <body>
-<div class="top">
-    <button onclick="goBack();" class="btn waves-effect waves-light">
-        <i class="material-icons">keyboard_backspace</i>
-    </button>
-</div>
+    <div class="top">
+        <button onclick="goBack();" class="btn waves-effect waves-light">
+            <i class="material-icons">keyboard_backspace</i>
+        </button>
+    </div>
     <h2>Cart</h2>
-<br>
-<br>
+    <br>
+    <br>
     <div class="cartForm" action="#">
         <div class="close">
             <span>
-            <label id="entree"></label>
+                <label class="type" id="entree"></label>
+                <label class="price" id="entreePrice"></label>
             </span>
-            <span  class="removal" onclick="removeItem('Entree');">
+            <span class="removal" onclick="removeItem('Entree');">
 
                 <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="close">
             <span>
-                <label id="drink"></label>
+                <label class="type" id="drink"></label>
+                <label class="price" id="drinkPrice"></label>
             </span>
-            <span  class="removal"  onclick="removeItem('Drink');">
+            <span class="removal" onclick="removeItem('Drink');">
                 <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="close">
             <span>
-                <label id="snack"></label>
+                <label class="type" id="snack"></label>
+                <label class="price" id="snackPrice"></label>
             </span>
-            <span class="removal"  onclick="removeItem('Snack');">
+            <span class="removal" onclick="removeItem('Snack');">
                 <i class="material-icons">remove_circle_outline</i></span>
         </div>
         <div class="close">
             <span>
-                <label id="total"></label>
+                <label class="type" id="total">Total</label>
+                <label class="price" id="totalPrice"></label>
             </span>
         </div>
-        <div class="center" onclick="submitFunc()" >
-            <button class="btn waves-effect waves-light submitbtn" name="action"
-                    id="submitbtn">Checkout
+        <div class="center" onclick="submitFunc()">
+            <button class="btn waves-effect waves-light submitbtn" name="action" id="submitbtn">Checkout
                 <i class="material-icons right">shopping_cart</i>
             </button>
         </div>
     </div>
 </body>
+
 </html>
