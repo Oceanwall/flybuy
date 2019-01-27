@@ -12,7 +12,13 @@ window.onload = function() {
   var instances = M.FormSelect.init(elems);
 
   document.getElementById("selecto").onchange = function() {
-    translate(document.getElementById("selecto").value);
+    var stream = fs.createWriteStream('data/language.json');
+    stream.once('open', function (fd) {
+      stream.write(document.getElementById("selecto").value);
+      stream.end()
+
+      translate(document.getElementById("selecto").value);
+    });
     //console.log(document.getElementById("selecto").value);
   }
 
@@ -63,7 +69,17 @@ window.onload = function() {
     document.getElementById("nameTitle").innerHTML = 'Hello, ' + data.toString().split('\n')[0];
   });
 
- // translate("fr");
+
+
+  fs.readFile('data/language.json', 'utf8', function (err, data) {
+    if (err) throw err;
+
+    document.getElementById("selecto").value = data;
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
+    translate(data);
+  });
+
 }
 
 function eventFire(el, etype){

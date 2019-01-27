@@ -27,7 +27,7 @@
     </button>
 
   </div>
-    <h1 class="title">Customer Feedback</h1>
+    <h1 class="title" id="one">Customer Feedback</h1>
   <br>
 
   <!-- <div class="row">
@@ -35,7 +35,7 @@
     <div class="top">
 
       <br>
-      <label class="category">Category</label>
+      <label class="category" id="two">Category</label>
       <div class="numberDiv">
       <label class="numbers">1</label>
       <label class="numbers">2</label>
@@ -47,7 +47,7 @@
     </div>
     <form id="mainform" class="mainform" action="#">
       <p>
-        <label class="ftype">Cleanliness</label>
+        <label class="ftype" id="three">Cleanliness</label>
       <!--<div class="radios">-->
 
       <label>
@@ -76,7 +76,7 @@
       <div class="divider"><hr></div>
 
       <p>
-        <label class="ftype">Hospitality</label>
+        <label class="ftype" id="four">Hospitality</label>
         <label>
           <input class="with-gap" name="hospit" type="radio"  />
           <span></span>
@@ -101,7 +101,7 @@
       <div class="divider"><hr></div>
 
       <p>
-        <label class="ftype">Food and Drink Quality</label>
+        <label class="ftype" id="five">Food and Drink Quality</label>
         <label>
           <input class="with-gap" name="quality" type="radio"  />
           <span></span>
@@ -125,7 +125,7 @@
       </p>
       <div class="divider"><hr></div>
       <p>
-        <label class="ftype">In-Flight Entertainment</label>
+        <label class="ftype" id="six">In-Flight Entertainment</label>
         <label>
           <input class="with-gap" name="entertain" type="radio"  />
           <span></span>
@@ -150,7 +150,7 @@
       <div class="divider"><hr></div>
 
       <p>
-        <label class="ftype">Seating Comfort</label>
+        <label class="ftype" id="seven">Seating Comfort</label>
         <label>
           <input class="with-gap" name="comfort" type="radio"  />
           <span></span>
@@ -180,7 +180,7 @@
           <div class="row">
             <div class="input-field col s12">
               <textarea id="additional" class="materialize-textarea"></textarea>
-              <label for="additional">Additional Feedback</label>
+              <label for="additional" id="eight">Additional Feedback</label>
             </div>
           </div>
         </form>
@@ -188,7 +188,7 @@
 
       <div class="center" onclick="submitFunc()" >
       <button class="btn waves-effect waves-light btn-large submitbtn" type="submit" name="action"
-      id="submitbtn">Submit
+      id="submitbtn"> <span id="submitspan">Submit</span>
         <i class="material-icons right">send</i>
       </button>
       </div>
