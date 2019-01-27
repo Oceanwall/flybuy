@@ -24,33 +24,39 @@
     animation-fill-mode: forwards;
     text-align: center;
     line-height: 35px;
-
+}
+.card-image div {
+  
 }
 
 hr {
     width:90%;
 }
 
-span.veg {
-    background-color: lightgreen;
-    font-size: 18px;
-    width:45px;
-    height:45px;
-    border-radius: 5em;
-    text-align: center;
-    margin:auto;
-    padding: 5px;
+div.veg {
+  background-color: lightgreen;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5em;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-span.glut {
-    background-color: lightblue;
-    font-size: 18px;
-    width:40px;
-    height:45px;
-    border-radius: 5em;
-    text-align: center;
-    margin:auto;
-    padding: 5px;
+div.glut {
+  background-color: lightblue;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5em;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .food-hover-shadow:hover > .card-image {
