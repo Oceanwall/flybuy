@@ -44,13 +44,13 @@ div.backbtndiv {
   transition: all 0.8s;
 }
 
-#flight3-text {
+#flight3-text, #flight4-text, #flight5-text {
   cursor: pointer;
   transition: all 0.2s;
 }
-#flight3-text:hover {
+/* #flight3-text:hover {
   transform: translate(2px, -2px);
-}
+} */
 .admiral {
   height: 225px;
   background-position: center;
@@ -61,6 +61,12 @@ div.backbtndiv {
   height: 200px;
   background-position: center;
   background-image: url("../../images/drink_ad.jpg");
+  width: 100%;
+}
+.attendants {
+  height: 200px;
+  background-position: top;
+  background-image: url("../../images/attendants.jpg");
   width: 100%;
 }
 .admiral-text {

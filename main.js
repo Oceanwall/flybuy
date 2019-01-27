@@ -11,12 +11,12 @@ function createWindow() {
   // Change window settings here.
   mainWindow = new BrowserWindow({ width: 1000, height: 700, resizable: false })
   mainWindow.setMenu(null);
-  // mainWindow.setIcon("./images/logo.png")
+  mainWindow.setIcon("./images/apple-touch-icon.png");
   // and load the index.html of the app.
     mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   fs.readFile('data/users.json', 'utf8', function (err, data) {
     if (err) throw err
