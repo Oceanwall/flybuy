@@ -21,7 +21,7 @@ function createWindow() {
     if (err) throw err
     let obj = JSON.parse(data)
 
-    let nameIndex = Math.floor(Math.random() * (obj.length))
+    let nameIndex = Math.floor(Math.random() * obj.length)
     let name = obj[nameIndex].firstName + ' ' + obj[nameIndex].lastName
 
     fs.readFile('data/flightData.json', 'utf8', function (err, data) {

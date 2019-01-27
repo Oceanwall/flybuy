@@ -1,4 +1,5 @@
 const swal = require('sweetalert');
+const fs = require('fs');
 
 window.onload = function() {
   document.getElementById("switch").onclick = function() {
@@ -36,6 +37,14 @@ window.onload = function() {
     }
 
   }
+
+  fs.readFile('data/persistence.txt', 'utf8', function (err, data) {
+    if (err) {
+      console.log(err);
+    }
+    document.getElementById("nameTitle").innerHTML = 'Hello, ' + data.toString().split('\n')[0];
+  });
+  
 }
 
 function eventFire(el, etype){
