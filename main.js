@@ -10,12 +10,12 @@ function createWindow() {
   // Create the browser window.
   // Change window settings here.
   mainWindow = new BrowserWindow({ width: 1000, height: 700, resizable: false })
-  mainWindow.setMenu(null);
+  //mainWindow.setMenu(null);
   // and load the index.html of the app.
   mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   fs.readFile('data/users.json', 'utf8', function (err, data) {
     if (err) throw err
