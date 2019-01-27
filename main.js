@@ -12,16 +12,16 @@ function createWindow() {
   mainWindow = new BrowserWindow({ width: 1000, height: 700, resizable: false })
   mainWindow.setMenu(null);
   // and load the index.html of the app.
-  mainWindow.loadFile('pages/plane_map_page/index.html')
+  mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   fs.readFile('data/users.json', 'utf8', function (err, data) {
     if (err) throw err
     let obj = JSON.parse(data)
 
-    let nameIndex = Math.floor(Math.random() * (obj.length))
+    let nameIndex = Math.floor(Math.random() * obj.length)
     let name = obj[nameIndex].firstName + ' ' + obj[nameIndex].lastName
 
     fs.readFile('data/flightData.json', 'utf8', function (err, data) {
