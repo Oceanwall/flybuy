@@ -1,20 +1,48 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow } = require('electron')
+var fs = require('fs')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   // Change window settings here.
-  mainWindow = new BrowserWindow({width: 1000, height: 700, resizable: false})
+  mainWindow = new BrowserWindow({ width: 1000, height: 700, resizable: false })
   mainWindow.setMenu(null);
   // and load the index.html of the app.
-  mainWindow.loadFile('pages/plane_map_page/index.html')
+  mainWindow.loadFile('pages/landing_page/index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  fs.readFile('data/users.json', 'utf8', function (err, data) {
+    if (err) throw err
+    let obj = JSON.parse(data)
+
+    let nameIndex = Math.floor(Math.random() * (obj.length))
+    let name = obj[nameIndex].firstName + ' ' + obj[nameIndex].lastName
+
+    fs.readFile('data/flightData.json', 'utf8', function (err, data) {
+      if (err) throw err
+      obj = JSON.parse(data)
+
+      let keys = Object.keys(obj)
+      let start = keys[keys.length * Math.random() << 0];
+      console.log(start)
+
+      let flightIndex = Math.floor(Math.random() * obj[start].flights.length)
+
+      var stream = fs.createWriteStream('data/persistence.txt')
+      stream.once('open', function (fd) {
+        stream.write(name + '\n')
+        stream.write(start + '\n')
+        stream.write(flightIndex + '\n')
+        stream.end()
+      });
+    })
+  })
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
