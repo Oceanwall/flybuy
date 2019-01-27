@@ -23,11 +23,6 @@ window.onload=function() {
 }
 
 function writeSecond() {
-  var options = {
-    showCursor: false,
-    strings: [`Planned Departure Time: 10:10 AM ${lineStop} <span class='green-text'>Actual Departure Time: 10:05 AM</span> ${lineStop} Planned Arrival Time: 4:15 PM ${lineStop} <span class="red-text">Estimated Arrival Time: 4:25 PM</span>`],
-    typeSpeed: 20
-  };
-
-  var typed = new Typed("#flight-text", options);
+  document.getElementById("flight-text").style.opacity = 1;
+  document.getElementById("flight2-text").style.opacity = 1;
 }

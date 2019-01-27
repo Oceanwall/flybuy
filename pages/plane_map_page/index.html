@@ -12,6 +12,7 @@
     <link href="../../styles/box-shadows.min.css" rel="stylesheet">
 
     <link href="../../styles/global.css" rel="stylesheet">
+    <link href="../../styles/animate.css" rel="stylesheet">
     <script src="../../scripts/global.js"></script>
 
     <link href="./styles.css" rel="stylesheet">
@@ -38,14 +39,15 @@
           <p class="write-text" id="name-text"></p>
         </div>
         <!-- TODO: Transition in additional information about flight -->
-        <div class="plane-card">
-          <p class="write-text" id="flight-text"></p>
+        <div class="plane-card animate hide-plane-card" id="flight-text">
+          <p class="write-text">
+            Planned Departure Time: 10:10 AM<br><span class='green-text'>Actual Departure Time: 10:05 AM</span><br>Planned Arrival Time: 4:15 PM<br><span class="red-text">Estimated Arrival Time: 4:25 PM</span>
+          </p>
         </div>
-        <div class="plane-card">
-          <p class="write-text" ></p>
-        </div>
-        <div class="plane-card">
-          <p class="write-text" ></p>
+        <div class="plane-card animate hide-plane-card" id="flight2-text">
+          <p class="write-text">
+            Flight Number: AA63<br>Airplane Model: Airbus 772
+          </p>
         </div>
       </div>
     </div>

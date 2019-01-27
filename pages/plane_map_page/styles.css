@@ -31,3 +31,7 @@ div.backbtndiv {
 .bathrooms {
   height: 1500px;
 }
+.hide-plane-card {
+  opacity: 0;
+  transition: all 0.8s;
+}
