@@ -1,4 +1,5 @@
 const Typed = require('typed.js');
+const lineStop = "<br>^100";
 
 function loadImg() {
     let pic=Math.floor(Math.random() * (10));
@@ -11,14 +12,22 @@ function loadImg() {
 window.onload=function() {
     loadImg();
 
-    let lineStop = "<br>^100";
-
     var options = {
       showCursor: false,
-      strings: [`Name: John Somebody ${lineStop} AAdvantage Status: Gold ${lineStop} Origin Airport: NRT ${lineStop} Destination Airport: DFW ${lineStop}`],
-      typeSpeed: 60
+      strings: [`Name: John Somebody ${lineStop} AAdvantage Status: <span class="yellow-text text-darken-3">Gold</span> ${lineStop} Origin Airport: DFW ${lineStop} Destination Airport: NRT ${lineStop}`],
+      typeSpeed: 20,
+      onComplete: writeSecond
     };
 
     var typed = new Typed("#name-text", options);
+}
 
+function writeSecond() {
+  var options = {
+    showCursor: false,
+    strings: [`Planned Departure Time: 10:10 AM ${lineStop} <span class='green-text'>Actual Departure Time: 10:05 AM</span> ${lineStop} Planned Arrival Time: 4:15 PM ${lineStop} <span class="red-text">Estimated Arrival Time: 4:25 PM</span>`],
+    typeSpeed: 20
+  };
+
+  var typed = new Typed("#flight-text", options);
 }

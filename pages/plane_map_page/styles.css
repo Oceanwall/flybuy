@@ -19,8 +19,12 @@ div.backbtndiv {
   background: white;
   box-shadow: 0px 1px 3px grey;
 }
-#name-text {
+.write-text {
+  padding-left: 5px;
+  font-family: 'Muli', sans-serif;
   margin-top: 0px;
+  font-size: 18px;
+  line-height: 36px;
 }
 .center {
 }

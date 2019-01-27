@@ -5,11 +5,19 @@
 }
 .food-hover-shadow {
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .food-hover-shadow:hover {
   /* box-shadow: 0 2px 2px lightgrey; */
   box-shadow: none;
+  transform: rotateY(180deg);
+  background-color: white;
+}
+.food-hover-shadow:hover > .card-image {
+  opacity: 0;
+}
+.card-image, .card3-inner-text {
+  opacity: 1;
 }
 
 h2.menuheader {
@@ -18,6 +26,6 @@ h2.menuheader {
 }
 
 div.top {
-    margin:15px;
+  margin:15px;
 }
 
