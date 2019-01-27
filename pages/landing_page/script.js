@@ -10,7 +10,10 @@ window.onload = function() {
     console.log(document.getElementById("selecto").value);
   }
 
+  let clicked = false;
   document.getElementById("switch").onclick = function() {
+    if (clicked) return;
+    clicked = true;
     if (document.getElementById("checkbox").disabled) {
       // DOn't do anything
       console.log("disabled");
@@ -38,6 +41,7 @@ window.onload = function() {
                 icon: "success",
                 button: "Thanks!",
               });
+              document.getElementById('checkbox').click();
             }, 3000);
           }
         });
