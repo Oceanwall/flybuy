@@ -1,0 +1,12 @@
+.food-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.food-hover-shadow {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.food-hover-shadow:hover {
+  box-shadow: 0 2px 2px lightgrey;
+  /* box-shadow: none; */
+}

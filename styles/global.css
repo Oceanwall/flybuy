@@ -171,11 +171,12 @@ h1 {
 .image-card-bg-medium {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 200px;
 }
 .card3 {
-  padding: 20px 20px 0px 20px;
+  /* padding: 20px 20px 0px 20px; */
+  padding: 0px;
   box-shadow: none;
   border-radius: 5px;
   border: 1px lightgrey solid;
@@ -190,6 +191,20 @@ h1 {
   margin-top: 20px;
   opacity: 0;
   transition: 0.2s all ease-in;
+  margin-right: 20px;
+}
+
+.food-image-1 {
+  background-image: url("../images/food-image-1.jpg");
+}
+.food-image-2 {
+  background-image: url("../images/food-image-2.jpg");
+}
+.food-image-3 {
+  background-image: url("../images/food-image-3.jpg");
+}
+.food-image-4 {
+  background-image: url("../images/food-image-4.jpg");
 }
 
 /* Title 3 style */
