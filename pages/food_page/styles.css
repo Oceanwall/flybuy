@@ -1,93 +1,122 @@
-
 .food-container {
-  margin-left: 50px;
-  margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 .food-hover-shadow {
-  cursor: pointer;
-  transition: all 0.5s ease-in;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
 }
+
 .food-hover-shadow:hover {
-  /* box-shadow: 0 2px 2px lightgrey; */
-  box-shadow: none;
+    /* box-shadow: 0 2px 2px lightgrey; */
+    box-shadow: none;
 }
 .card-image  {
-  animation: changeAwayImage 0.7s;
-  animation-fill-mode: forwards;
+    animation: changeAwayImage 0.7s;
+    animation-fill-mode: forwards;
 }
 .card-descript-text {
-  animation: changeAwayText 0.7s;
-  animation-fill-mode: forwards;
+    animation: changeAwayText 0.7s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    line-height: 35px;
+
 }
+
+span.veg {
+    background-color: lightgreen;
+    font-size: 18px;
+    width:45px;
+    height:45px;
+    border-radius: 5em;
+    text-align: center;
+    margin:auto;
+    padding: 5px;
+}
+
+span.glut {
+    background-color: lightblue;
+    font-size: 18px;
+    width:40px;
+    height:45px;
+    border-radius: 5em;
+    text-align: center;
+    margin:auto;
+    padding: 5px;
+}
+
 .food-hover-shadow:hover > .card-image {
-  animation: changeTowardsImage 0.7s;
-  animation-fill-mode: forwards;
+    animation: changeTowardsImage 0.7s;
+    animation-fill-mode: forwards;
 }
 .food-hover-shadow:hover > .card-image > .card-descript-text {
-  /* opacity: 1; */
-  animation: changeTowardsText 0.7s;
-  animation-fill-mode: forwards;
+    /* opacity: 1; */
+    animation: changeTowardsText 0.7s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes changeTowardsImage {
-  /* You could think of as "step 1" */
-  0% {
-    transform: rotateY(0deg);
-  }
-  90 % {
-    transform: rotateY(160deg);
-  }
-  /* You could think of as "step 2" */
-  100% {
-    transform: rotateY(180deg);
-    background: rgba(0,0,255,0);
-  }
+    /* You could think of as "step 1" */
+    0% {
+        transform: rotateY(0deg);
+    }
+    90 % {
+        transform: rotateY(160deg);
+    }
+    /* You could think of as "step 2" */
+    100% {
+        transform: rotateY(180deg);
+        background: rgba(0,0,255,0);
+    }
 }
+
 @keyframes changeTowardsText {
-  /* You could think of as "step 1" */
-  0% {
-    opacity: 0;
-  }
-  99 % {
-    opacity: 0;
-  }
-  /* You could think of as "step 2" */
-  100% {
-    opacity: 1;
-  }
+    /* You could think of as "step 1" */
+    0% {
+        opacity: 0;
+    }
+    99 % {
+        opacity: 0;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes changeAwayImage {
-  0% {
-    transform: rotateY(180deg);
-    background: rgba(0,0,255,0);
-  }
-  10 % {
-    transform: rotateY(160deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
+    0% {
+        transform: rotateY(180deg);
+        background: rgba(0,0,255,0);
+    }
+    10 % {
+        transform: rotateY(160deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
 }
 @keyframes changeAwayText {
-  /* You could think of as "step 1" */
-  0% {
-    opacity: 1;
-  }
-  1 % {
-    opacity: 0;
-  }
-  /* You could think of as "step 2" */
-  100% {
-    opacity: 0;
-  }
+    /* You could think of as "step 1" */
+    0% {
+        opacity: 1;
+    }
+    1 % {
+        opacity: 0;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        opacity: 0;
+    }
 }
 
 .card-descript-text {
-  transform: rotateY(180deg);
-  opacity: 0;
+    transform: rotateY(180deg);
+    opacity: 0;
 }
+
 .card-image, .card3-inner-text {
-  opacity: 1;
+    opacity: 1;
 }
 
 h2.menuheader {
@@ -96,12 +125,17 @@ h2.menuheader {
 }
 
 div.top {
-  margin:15px;
+    margin:15px;
 }
 
 h3.header4 {
     margin:auto;
     text-align: center;
+}
+
+#cartbutton {
+    position: fixed;
+    margin-left: 860px;
 }
 
 
@@ -146,4 +180,12 @@ h3.header4 {
 
 .food-image-12 {
     background-image: url("../../images/food/trail-mix.jpg");
+}
+
+
+#toast-container {
+    min-width: 10%;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%) translateY(80%);
 }

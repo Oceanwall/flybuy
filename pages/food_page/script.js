@@ -23,6 +23,8 @@ function toShoppingCart() {
     stream.once('open', function (fd) {
         stream.write(JSON.stringify(items));
         stream.end()
+
+        transfer('cart_page');
     });
-    transfer('cart_page');
+
 }
