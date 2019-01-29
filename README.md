@@ -1,5 +1,3 @@
-# flybuy
-
 <h1 align="center">
   <br>
     <a href="">
@@ -7,7 +5,11 @@
     </a>
 </h1>
 
-Electron app that enhances the American Airlines in-flight experience. Built at TAMUHack 2019.
+Electron app that enhances the American Airlines in-flight experience. Built at TAMUHack 2019.<br>
+
+```diff
++ 'Best Airline Industry Hack - 3rd Place!'
+```
 
 ## Features
 
@@ -49,6 +51,9 @@ We learned various technologies and frameworks, including the Electron framework
 ## What's next for flybuy
 
 We would like to scale our back-end to handle more users and optimize our database accesses. Also, we want to add a system for customers to change their seat during the flight.
+
+[See our devpost here!](https://devpost.com/software/flybuy-e016im)<br>
+[Find a youtube demo of our product here!](https://www.youtube.com/watch?v=0r8oRzLs-sE)<br>
 
 ## To Use
 
