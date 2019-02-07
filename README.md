@@ -5,7 +5,7 @@
     </a>
 </h1>
 
-Electron app that enhances the American Airlines in-flight experience. Built at TAMUHack 2019 and 2nd place winner of American Airline's challenge.<br>
+Electron app that enhances the American Airlines in-flight experience. Built at TAMUHack 2019<br>
 
 ```diff
 + 'Best Airline Industry Hack - 3rd Place!'
